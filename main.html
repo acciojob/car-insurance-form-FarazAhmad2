@@ -8,7 +8,66 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+    <form action="#" method="POST">
+      <!-- Name Field -->
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" required />
+
+      <!-- Email Field -->
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        required
+      />
+
+      <!-- Gender Field -->
+      <label>Gender</label>
+      <input type="radio" id="gender_m" name="gender" required />
+      <label for="gender_m">Male</label>
+      <input type="radio" id="gender_f" name="gender" required />
+      <label for="gender_f">Female</label>
+
+      <!-- Car Brands Field -->
+      <label for="cars">Car Brands</label>
+      <select id="cars" name="cars">
+        <option value="">--Please choose an option--</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Mercedes">Mercedes</option>
+      </select>
+
+      <!-- Car Age Field -->
+      <label for="carage">Car Age</label>
+      <input
+        type="number"
+        id="carage"
+        name="carage"
+        placeholder="Car Age (in years)"
+        required
+      />
+
+      <!-- Date of Purchase (DOP) Field -->
+      <label for="dop">Date of Purchase (dop)</label>
+      <input type="date" id="dop" name="dop" required />
+
+      <!-- Password Field -->
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        required
+      />
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+
+	<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
